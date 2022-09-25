@@ -46,6 +46,18 @@ const Dashboard: React.FC = () => {
     }
   };
 
+  const handleReturn = () => {
+    setIsSubmitted(false)
+    setFormData({
+        gender: "",
+        style: "",
+        bankCode: "",
+        acctNum: "",
+        acctName: "",
+        error: false,
+    })
+  }
+
   const handleDisplaySuccessPage = () => {
     return (
         <div className="success">
@@ -65,6 +77,15 @@ const Dashboard: React.FC = () => {
                 Fitted Agent will get in touch with you regard the next steps.
                 Goodluck!
               </p>
+            </div>
+            <div>
+                <button
+                    onClick={handleReturn}
+                    type="submit"
+                    className="submit-btn"
+                >
+                    Return to Dashboard
+                </button>
             </div>
           </div>
     )
