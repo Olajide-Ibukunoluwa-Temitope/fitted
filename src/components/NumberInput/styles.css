@@ -1,0 +1,12 @@
+.num-input-container{
+    margin-top: 16px;
+}
+
+.text-input {
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: solid 1px #BDBDBD;
+}

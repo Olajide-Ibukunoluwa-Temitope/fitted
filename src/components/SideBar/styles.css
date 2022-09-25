@@ -1,0 +1,140 @@
+.side-bar {
+  color: white;
+  width: 25%;
+  position: relative;
+  padding: 24px;
+  background: linear-gradient(
+    192.77deg,
+    rgba(0, 240, 255, 0.8) -22.81%,
+    rgba(83, 118, 255, 0.8) 28.04%,
+    rgba(0, 12, 182, 0.8) 114.1%
+  );
+  box-shadow: 7px 0px 106px rgba(0, 0, 0, 0.1);
+}
+
+.side-bar .logo {
+  position: absolute;
+}
+
+.side-bar-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profile-initials-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.profile-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000cb6;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
+.edit {
+  background-color: #f4f4f4;
+  border: 4px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.side-bar-summary-content {
+  text-align: center;
+}
+
+.side-bar-summary-content .name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.side-bar-summary-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.side-bar-summary-content .link p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.side-bar-summary-content .sub-text {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.vetted-dropdown {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 8px;
+  padding: 8px 16px;
+  border: solid 1px #e8e9eb;
+  border-radius: 6px;
+}
+
+.vetted-dropdown p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.side-bar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  width: 92%;
+  margin-left: -24px;
+  padding: 4px 0 4px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.active-item {
+  width: 92%;
+  margin-left: -24px;
+  padding: 4px 0 4px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 0px 50px 50px 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .side-bar {
+        display: none;
+    }
+}
